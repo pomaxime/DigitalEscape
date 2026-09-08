@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+
 app = FastAPI()
 
 @app.get("/")
@@ -17,3 +18,6 @@ def get_rooms():
 @app.get("/room/{room_id}")
 def get_room(room_id: str):
     return rooms.get(room_id)
+
+# Lancer le serveur depuis le terminal :
+# fastapi dev exemple_3.py
