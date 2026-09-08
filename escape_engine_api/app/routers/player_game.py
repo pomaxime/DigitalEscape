@@ -1,8 +1,7 @@
 from fastapi import APIRouter
 
-from app.domain.room import Room
-from app.domain.code_puzzle import CodePuzzle
-
+from ..domain.code_puzzle import CodePuzzle
+from ..domain.room import Room
 
 router = APIRouter()
 
@@ -10,8 +9,7 @@ router = APIRouter()
 puzzle_1 = CodePuzzle(
     id="puzzle_1",
     name="L'énigme de Vélocie Ruben",
-    description=""
-    "écrire l'énigme ici",
+    description="Écrivez la signification de l'inscription RAWR.",
     secret_code="Raptor Affamé Want Ribs"
 )
 

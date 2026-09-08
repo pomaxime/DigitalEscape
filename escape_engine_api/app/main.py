@@ -1,6 +1,9 @@
 from fastapi import FastAPI
 
+from .routers.player_game import router as player_game_router
+
 app = FastAPI()
+app.include_router(player_game_router)
 
 @app.get("/")
 def home():
