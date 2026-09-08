@@ -1,4 +1,4 @@
-name: escape_engine
+name: RAWR
 channels:
   - conda-forge
   - defaults
