@@ -9,7 +9,7 @@ router = APIRouter()
 
 puzzle_1 = CodePuzzle(
     id="puzzle_1",
-    name="L'énigme de Vélocie Ruben",
+    name="L'énigme de Véloci Ruben",
     description=""
     "écrire l'énigme ici",
     secret_code="Raptor Affamé Want Ribs"
@@ -18,10 +18,10 @@ puzzle_1 = CodePuzzle(
 
 room_1 = Room(
     id="room_1",
-    name="Le laboratoire de Vélocie Ruben",
+    name="Le laboratoire de Véloci Ruben",
     description=(
         "Vous êtes enfermés dans le laboratoire du raptor "
-        "Vélocie Ruben. Une inscription affiche RAWR. "
+        "Véloci Ruben. Une inscription affiche RAWR. "
         "Vous devez découvrir sa signification pour continuer."
     ),
     puzzles=[puzzle_1]
