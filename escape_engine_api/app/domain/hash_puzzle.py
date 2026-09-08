@@ -4,8 +4,15 @@ from .puzzle import Puzzle
 
 
 class HashPuzzle(Puzzle):
-	def __init__(self, id: str, name: str, description: str, expected_hash: str):
-		super().__init__(id, name, description)
+	def __init__(
+		self,
+		id: str,
+		name: str,
+		description: str,
+		expected_hash: str,
+		hints: list[str] | None = None,
+	):
+		super().__init__(id, name, description, hints)
 		self.expected_hash = expected_hash
 
 	def check_solution(self, answer: str) -> bool:
