@@ -7,25 +7,28 @@ class Room(GameElement):
         id: str,
         name: str,
         description: str,
-        items: list | None = None,
+        Items: list | None = None,
         doors: list | None = None,
         puzzles: list | None = None,
+        time_limit: int | None = None,
     ):
         super().__init__(id, name, description)
-        self.items = items or []
+        self.Items = Items or []
         self.doors = doors or []
         self.puzzles = puzzles or []
+        self.time_limit = time_limit
 
     def to_dict(self):
         return {
             **super().to_dict(),
-            "items": self.items,
+            "Items": self.Items,
             "doors": self.doors,
             "puzzles": self.puzzles,
+            "time_limit": self.time_limit,
         }
 
     def add_item(self, item):
-        self.items.append(item)
+        self.Items.append(item)
 
     def add_door(self, door):
         self.doors.append(door)
