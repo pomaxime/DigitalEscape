@@ -1,0 +1,16 @@
+    Classe : Ce qu'elle représente -> Son rôle
+_____________________________________________________________________________
+
+GameElement	: Un élément générique -> Fournit id, name, description
+
+Item : Un objet -> Représente un objet récupérable/utilisable
+
+Door : Une porte -> Gère l'accès à une autre zone
+
+Puzzle: Une énigme générique -> Définit comment une énigme doit vérifier une réponse
+
+CodePuzzle : Une énigme à code -> Vérifie directement un code
+
+HashPuzzle: Une énigme sécurisée -> Vérifie une réponse via son hash SHA-256
+
+Room : Une salle -> Regroupe les objets, portes et énigmes
