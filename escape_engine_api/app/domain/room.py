@@ -4,6 +4,7 @@ from ..domain.code_puzzle import CodePuzzle
 from ..domain.room import Room
 
 
+
 class Room(GameElement):
     def __init__(
         self,
