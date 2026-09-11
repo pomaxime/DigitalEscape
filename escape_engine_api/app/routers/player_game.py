@@ -5,8 +5,6 @@ app = FastAPI()
 
 class Player(BaseModel):
     name: str
-    score: int
-    level: int
 
 players = [
 
