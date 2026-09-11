@@ -1,4 +1,7 @@
 from .game_element import GameElement
+from fastapi import APIRouter
+from ..domain.code_puzzle import CodePuzzle
+from ..domain.room import Room
 
 
 class Room(GameElement):
@@ -36,13 +39,6 @@ class Room(GameElement):
     def add_puzzle(self, puzzle):
         self.puzzles.append(puzzle)
 
-
-
-
-from fastapi import APIRouter
-
-from ..domain.code_puzzle import CodePuzzle
-from ..domain.room import Room
 
 router = APIRouter()
 
