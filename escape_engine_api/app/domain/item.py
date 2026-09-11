@@ -19,5 +19,11 @@ class Key(Item):
 
 
 class Ribs(Item):
-    def __init__(self, id: str, name: str, description: str):
+    def __init__(self, id: str, name: str, description: str, time_add: int):
+        self.time_add = time_add
         super().__init__(id, name, description, "ribs")
+
+    def additional_time(self):
+        self.duration += self.time_add
+
+ribs = Ribs(id, "Ribs", "Ajoute 10min au temps restant", 600)
