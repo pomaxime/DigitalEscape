@@ -53,6 +53,7 @@ puzzle_1 = CodePuzzle(
     ),
     secret_code="Raptor Affamé Want Ribs",
     hints=["Tout vous est donné dans l'ordre des paroles de Véloci Ruben."],
+    hints=["Tout vous est donné dans l'ordre des paroles de Véloci Ruben."],
 )
 
 
@@ -79,6 +80,7 @@ room_1 = Room(
         "Et oui, dans ce jeu tout peut être bilingue."
     ),
     puzzles=[puzzle_1],
+    puzzles=[puzzle_1],
     time_limit=900,
 )
 
@@ -96,11 +98,13 @@ puzzle_2 = CodePuzzle(
         "2 - 4 - 8 - 16 - ? "
         "Une inscription est affichée sous l'écran : "
         '"Dans ce laboratoire, tout double."'
+        '"Dans ce laboratoire, tout double."'
     ),
     secret_code="32",
     hints=[
         "Observez la relation entre chaque nombre.",
         "Chaque nombre est obtenu à partir du précédent.",
+        "Le nombre suivant est le double de 16.",
         "Le nombre suivant est le double de 16.",
     ],
 )
@@ -119,7 +123,9 @@ room_2 = Room(
         "Au centre de la pièce, un vieux terminal clignote. "
         "Un message apparaît à l'écran : "
         '"Seul celui qui comprend la suite pourra continuer."'
+        '"Seul celui qui comprend la suite pourra continuer."'
     ),
+    puzzles=[puzzle_2],
     puzzles=[puzzle_2],
     time_limit=900,
 )
@@ -135,7 +141,9 @@ puzzle_3 = CodePuzzle(
     description=(
         "Sur un bureau, vous trouvez une feuille couverte de lettres : "
         '"UDSWRU" '
+        '"UDSWRU" '
         "Une note est écrite en dessous : "
+        '"Véloci Ruben a déplacé chaque lettre de trois positions '
         '"Véloci Ruben a déplacé chaque lettre de trois positions '
         "dans l'alphabet.\" "
         "Déchiffrez le message."
@@ -144,6 +152,7 @@ puzzle_3 = CodePuzzle(
     hints=[
         "Les lettres ont été déplacées dans l'alphabet.",
         "Il faut reculer de trois lettres.",
+        "U devient R.",
         "U devient R.",
     ],
 )
@@ -164,6 +173,7 @@ room_3 = Room(
         "par Véloci Ruben."
     ),
     puzzles=[puzzle_3],
+    puzzles=[puzzle_3],
     time_limit=900,
 )
 
@@ -183,6 +193,9 @@ puzzle_4 = CodePuzzle(
         '"La clé n\'est pas dans la cage rouge." '
         '"La clé est dans la cage rouge." '
         '"La clé n\'est pas dans la cage bleue." '
+        '"La clé n\'est pas dans la cage rouge." '
+        '"La clé est dans la cage rouge." '
+        '"La clé n\'est pas dans la cage bleue." '
         "Une seule de ces affirmations est vraie. "
         "Dans quelle cage se trouve la clé ?"
     ),
@@ -190,6 +203,7 @@ puzzle_4 = CodePuzzle(
     hints=[
         "Une seule affirmation est vraie.",
         "Testez les trois possibilités.",
+        "Si la clé est dans la cage bleue, une seule affirmation est vraie.",
         "Si la clé est dans la cage bleue, une seule affirmation est vraie.",
     ],
 )
@@ -211,5 +225,7 @@ room_4 = Room(
         "laquelle avant de pouvoir atteindre la sortie."
     ),
     puzzles=[puzzle_4],
+    puzzles=[puzzle_4],
     time_limit=900,
 )
+

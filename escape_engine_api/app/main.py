@@ -11,7 +11,9 @@ def home():
 
 rooms = {
     "room1": {"name": "Room 1", "description": "This is room 1"},
-    "room2": {"name": "Room 2", "description": "This is room 2"}
+    "room2": {"name": "Room 2", "description": "This is room 2"},
+    "room3": {"name": "Room 3", "description": "This is room 3"},
+    "room4": {"name": "Room 4", "description": "This is room 4"}
 }
 
 @app.get("/room")
