@@ -53,7 +53,6 @@ puzzle_1 = CodePuzzle(
     ),
     secret_code="Raptor Affamé Want Ribs",
     hints=["Tout vous est donné dans l'ordre des paroles de Véloci Ruben."],
-    hints=["Tout vous est donné dans l'ordre des paroles de Véloci Ruben."],
 )
 
 
@@ -79,7 +78,6 @@ room_1 = Room(
         "Rawr, je veux des côtes. >>"
         "Et oui, dans ce jeu tout peut être bilingue."
     ),
-    puzzles=[puzzle_1],
     puzzles=[puzzle_1],
     time_limit=900,
 )
@@ -126,7 +124,6 @@ room_2 = Room(
         '"Seul celui qui comprend la suite pourra continuer."'
     ),
     puzzles=[puzzle_2],
-    puzzles=[puzzle_2],
     time_limit=900,
 )
 
@@ -172,7 +169,6 @@ room_3 = Room(
         "Vous comprenez rapidement qu'elle contient un message laissé "
         "par Véloci Ruben."
     ),
-    puzzles=[puzzle_3],
     puzzles=[puzzle_3],
     time_limit=900,
 )
@@ -224,7 +220,6 @@ room_4 = Room(
         "Une clé se trouve dans l'une d'elles, mais vous devez déterminer "
         "laquelle avant de pouvoir atteindre la sortie."
     ),
-    puzzles=[puzzle_4],
     puzzles=[puzzle_4],
     time_limit=900,
 )

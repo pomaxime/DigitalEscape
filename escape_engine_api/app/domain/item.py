@@ -14,5 +14,5 @@ class Item(GameElement):
 
 
 class Key(Item):
-    def __init__(self, id: str, name: str):
-        super().__init__(id, name, "key")
+    def __init__(self, id: str, name: str, description: str):
+        super().__init__(id, name, description, "key")
